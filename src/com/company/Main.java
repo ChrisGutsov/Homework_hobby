@@ -21,24 +21,27 @@ public class Main {
                 System.out.println("3. Photography");
                 System.out.println("4. Watching TV");
                 System.out.println("5. Drinking");
-                System.out.println("Enter your choise:");
+                System.out.println("Enter your choice:");
         int hobby = scanner.nextByte();
 
         if (hobby == 1){
             System.out.println(" " +firstName+" "+lastName +" Great hobby! Hiking is a long, vigorous walk.");
         }
-        if (hobby == 2){
+        else if (hobby == 2){
             System.out.println(" " +firstName+" "+lastName+" Swimming is great! you always be in a good shape!");
         }
-        if (hobby == 3){
+        else if (hobby == 3){
             System.out.println(" " +firstName +" "+lastName +" Great hobby! you may have great memories.");
         }
-        if(hobby == 4){
+        else if(hobby == 4){
             System.out.println(" " +firstName +" "+lastName +" Bad hobby! you may have healthy issues!");
         }
-        if(hobby == 5){
-            System.out.println(" " +firstName +" "+lastName +" Very Bad hobby! You are destroying life!!");
-      }
+        else if(hobby == 5){
+            System.out.println(" " +firstName +" "+lastName +" Very Bad hobby! You are destroying your life!!");
+        }
+        else{
+            System.out.println("Wrong entry, try again!!!....");
+        }
 
     }
 }
